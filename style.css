@@ -30,11 +30,18 @@ nav {
   font-size: 0.6rem;
   margin: 0.2rem 0.9rem;
 }
+.nav-list a:hover {
+  color: #000;
+}
 
 header img {
   width: 8rem;
   padding-top: 0.5rem;
   height: auto;
+}
+header img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 /* Promotion Banner */
@@ -50,6 +57,27 @@ header img {
   background-image: url(./assets/images/slider.jpg);
   background-size: cover;
   background-position: center;
+}
+.promotion-banner span {
+  animation: slide 5s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    color: #61f2c2;
+  }
+  25% {
+    color: #f49315;
+  }
+  50% {
+    color: #004c64;
+  }
+  75% {
+    color: #d19261;
+  }
+  100% {
+    color: #61f2c2;
+  }
 }
 
 .promotion-banner h1 {
@@ -123,13 +151,19 @@ header img {
 .services-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
+  gap: 1.2rem;
 }
 
 #services article {
   background-color: #d0604c;
   border-radius: 1rem;
   padding: 1rem;
+}
+
+#services article:hover {
+  transform: scale(1.1);
+  background-color: #712a1e;
+  transition: transform 0.3s ease;
 }
 
 #services img {
@@ -223,7 +257,7 @@ footer ul {
   #about-us {
     flex-direction: row;
     max-width: 85%;
-    height: 45vh;
+    height: 40vh;
     align-items: flex-start;
   }
   #about-us h2 {
@@ -235,13 +269,14 @@ footer ul {
     padding: 1rem 2rem;
   }
   .about-us-image {
-    width: 15rem;
-    height: 15rem;
+    width: 14rem;
+    height: 14rem;
     margin-right: 1rem;
   }
 
   #services {
     padding: 2rem;
+    max-width: 85%;
     height: auto;
   }
 
