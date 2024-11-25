@@ -54,7 +54,7 @@ header img:hover {
   flex-direction: column;
   justify-content: left;
   align-items: center;
-  background-image: url(./assets/images/slider.jpg);
+  background-image: url("https://github.com/behnamac/Professional-services-Hair-Day/blob/main/assets/images/slider.jpg?raw=true");
   background-size: cover;
   background-position: center;
 }
@@ -304,5 +304,10 @@ footer ul {
   }
   #contact p {
     font-size: 1rem;
+  }
+  footer img {
+    width: 11rem;
+    padding: 0.5rem;
+    height: auto;
   }
 }
